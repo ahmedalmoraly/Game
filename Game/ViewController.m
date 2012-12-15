@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MessagesCell.h"
+#import "MessageViewController.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet MessagesCell *messagesCell;
@@ -85,7 +86,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    ViewController *controller = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    MessageViewController *controller = [[MessageViewController alloc] initWithNibName:@"MessageViewController" bundle:nil];
     
     [self.navigationController pushViewController:controller animated:YES];
 }

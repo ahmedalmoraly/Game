@@ -38,6 +38,11 @@
 		D3E941DE16791F8900FD4BFE /* refresh_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E941CB16791F8900FD4BFE /* refresh_btn.png */; };
 		D3E941E11679261900FD4BFE /* MessagesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E941E01679261800FD4BFE /* MessagesCell.m */; };
 		D3E941E31679262A00FD4BFE /* MessagesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3E941E21679262900FD4BFE /* MessagesCell.xib */; };
+		F71CE1DA167CBA27006CE374 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71CE1D8167CBA27006CE374 /* MessageViewController.m */; };
+		F71CE1DB167CBA27006CE374 /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71CE1D9167CBA27006CE374 /* MessageViewController.xib */; };
+		F71CE1E4167CC507006CE374 /* LeftMessageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71CE1E3167CC507006CE374 /* LeftMessageViewCell.xib */; };
+		F71CE1FE167CD1D9006CE374 /* RightMessageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71CE1FD167CD1D9006CE374 /* RightMessageViewCell.xib */; };
+		F71CE201167CD274006CE374 /* MessageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F71CE200167CD273006CE374 /* MessageViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +84,13 @@
 		D3E941DF1679261700FD4BFE /* MessagesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesCell.h; sourceTree = "<group>"; };
 		D3E941E01679261800FD4BFE /* MessagesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesCell.m; sourceTree = "<group>"; };
 		D3E941E21679262900FD4BFE /* MessagesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessagesCell.xib; sourceTree = "<group>"; };
+		F71CE1D7167CBA27006CE374 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		F71CE1D8167CBA27006CE374 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		F71CE1D9167CBA27006CE374 /* MessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
+		F71CE1E3167CC507006CE374 /* LeftMessageViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftMessageViewCell.xib; sourceTree = "<group>"; };
+		F71CE1FD167CD1D9006CE374 /* RightMessageViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightMessageViewCell.xib; sourceTree = "<group>"; };
+		F71CE1FF167CD273006CE374 /* MessageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewCell.h; sourceTree = "<group>"; };
+		F71CE200167CD273006CE374 /* MessageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +147,13 @@
 				D3E941DF1679261700FD4BFE /* MessagesCell.h */,
 				D3E941E01679261800FD4BFE /* MessagesCell.m */,
 				D3E941E21679262900FD4BFE /* MessagesCell.xib */,
+				F71CE1D7167CBA27006CE374 /* MessageViewController.h */,
+				F71CE1D8167CBA27006CE374 /* MessageViewController.m */,
+				F71CE1D9167CBA27006CE374 /* MessageViewController.xib */,
+				F71CE1FF167CD273006CE374 /* MessageViewCell.h */,
+				F71CE200167CD273006CE374 /* MessageViewCell.m */,
+				F71CE1E3167CC507006CE374 /* LeftMessageViewCell.xib */,
+				F71CE1FD167CD1D9006CE374 /* RightMessageViewCell.xib */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -270,6 +289,9 @@
 				D3E941DD16791F8900FD4BFE /* more_btn.png in Resources */,
 				D3E941DE16791F8900FD4BFE /* refresh_btn.png in Resources */,
 				D3E941E31679262A00FD4BFE /* MessagesCell.xib in Resources */,
+				F71CE1DB167CBA27006CE374 /* MessageViewController.xib in Resources */,
+				F71CE1E4167CC507006CE374 /* LeftMessageViewCell.xib in Resources */,
+				F71CE1FE167CD1D9006CE374 /* RightMessageViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +306,8 @@
 				D3E941A416791D9C00FD4BFE /* AppDelegate.m in Sources */,
 				D3E941AD16791D9D00FD4BFE /* ViewController.m in Sources */,
 				D3E941E11679261900FD4BFE /* MessagesCell.m in Sources */,
+				F71CE1DA167CBA27006CE374 /* MessageViewController.m in Sources */,
+				F71CE201167CD274006CE374 /* MessageViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +424,7 @@
 				D3E941B516791D9D00FD4BFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
