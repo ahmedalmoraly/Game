@@ -26,7 +26,6 @@
     // Configure the view for the selected state
 }
 
-
 -(void)setMessageBackgroundHidden:(BOOL)read
 {
     self.backgroundImageView.hidden = read;

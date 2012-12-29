@@ -13,7 +13,7 @@
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet MessagesCell *messagesCell;
 
-@property (strong, nonatomic) NSArray *messagesArray;
+@property (strong, nonatomic) NSMutableArray *messagesArray;
 @end
 
 @implementation ViewController
@@ -33,7 +33,7 @@
 {
     NSDictionary *message = @{@"title" : @"Message title", @"sender" : @"Ahmad al-Moraly", @"date" : @"12/12/2012", @"body" : @"Message body message body message body message body message body message body message body", @"count" : @"3"};
     
-    self.messagesArray = @[message, message, message, message, message, message, message, message, message, message, message,  message, message, message, message, message, message, message, message, message, message, message, message, message,  message, message];
+    self.messagesArray = [@[message, message, message, message, message, message, message, message, message, message, message,  message, message, message, message, message, message, message, message, message, message, message, message, message,  message, message]mutableCopy];
 }
 
 - (void)didReceiveMemoryWarning
@@ -84,11 +84,35 @@
     return cell;
 }
 
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        // delete datasource
+        [self deleteMessageAtIndex:indexPath.row];
+        // delete row
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
+}
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     MessageViewController *controller = [[MessageViewController alloc] initWithNibName:@"MessageViewController" bundle:nil];
     
     [self.navigationController pushViewController:controller animated:YES];
+}
+
+-(void)deleteMessageAtIndex:(NSInteger)index
+{
+    // remove from memory
+    [self.messagesArray removeObjectAtIndex:index];
+    
+    // TODO: remove from remote server
 }
 
 @end

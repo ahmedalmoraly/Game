@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3E6C504168DD45300F81CA6 /* YISSTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E6C501168DD45300F81CA6 /* YISSTextView.m */; };
+		D3E6C505168DD45300F81CA6 /* YIPopupTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E6C503168DD45300F81CA6 /* YIPopupTextView.m */; };
+		D3E6C50C168DD4FA00F81CA6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E6C50B168DD4FA00F81CA6 /* QuartzCore.framework */; };
 		D3E9419416791D9C00FD4BFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E9419316791D9C00FD4BFE /* UIKit.framework */; };
 		D3E9419616791D9C00FD4BFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E9419516791D9C00FD4BFE /* Foundation.framework */; };
 		D3E9419816791D9C00FD4BFE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E9419716791D9C00FD4BFE /* CoreGraphics.framework */; };
@@ -46,6 +49,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D3E6C500168DD45300F81CA6 /* YISSTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YISSTextView.h; sourceTree = "<group>"; };
+		D3E6C501168DD45300F81CA6 /* YISSTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YISSTextView.m; sourceTree = "<group>"; };
+		D3E6C502168DD45300F81CA6 /* YIPopupTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIPopupTextView.h; sourceTree = "<group>"; };
+		D3E6C503168DD45300F81CA6 /* YIPopupTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIPopupTextView.m; sourceTree = "<group>"; };
+		D3E6C50B168DD4FA00F81CA6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D3E9418F16791D9C00FD4BFE /* Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E9419316791D9C00FD4BFE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D3E9419516791D9C00FD4BFE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -98,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3E6C50C168DD4FA00F81CA6 /* QuartzCore.framework in Frameworks */,
 				D3E9419416791D9C00FD4BFE /* UIKit.framework in Frameworks */,
 				D3E9419616791D9C00FD4BFE /* Foundation.framework in Frameworks */,
 				D3E9419816791D9C00FD4BFE /* CoreGraphics.framework in Frameworks */,
@@ -107,9 +116,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3E6C4FE168DD45300F81CA6 /* YIPopupTextView */ = {
+			isa = PBXGroup;
+			children = (
+				D3E6C4FF168DD45300F81CA6 /* SSTextView */,
+				D3E6C502168DD45300F81CA6 /* YIPopupTextView.h */,
+				D3E6C503168DD45300F81CA6 /* YIPopupTextView.m */,
+			);
+			path = YIPopupTextView;
+			sourceTree = "<group>";
+		};
+		D3E6C4FF168DD45300F81CA6 /* SSTextView */ = {
+			isa = PBXGroup;
+			children = (
+				D3E6C500168DD45300F81CA6 /* YISSTextView.h */,
+				D3E6C501168DD45300F81CA6 /* YISSTextView.m */,
+			);
+			path = SSTextView;
+			sourceTree = "<group>";
+		};
 		D3E9418416791D9C00FD4BFE = {
 			isa = PBXGroup;
 			children = (
+				D3E6C50B168DD4FA00F81CA6 /* QuartzCore.framework */,
 				D3E9419916791D9C00FD4BFE /* Game */,
 				D3E9419216791D9C00FD4BFE /* Frameworks */,
 				D3E9419016791D9C00FD4BFE /* Products */,
@@ -137,6 +166,7 @@
 		D3E9419916791D9C00FD4BFE /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				D3E6C4FE168DD45300F81CA6 /* YIPopupTextView */,
 				D3E941B616791F8900FD4BFE /* Resources */,
 				D3E941A216791D9C00FD4BFE /* AppDelegate.h */,
 				D3E941A316791D9C00FD4BFE /* AppDelegate.m */,
@@ -308,6 +338,8 @@
 				D3E941E11679261900FD4BFE /* MessagesCell.m in Sources */,
 				F71CE1DA167CBA27006CE374 /* MessageViewController.m in Sources */,
 				F71CE201167CD274006CE374 /* MessageViewCell.m in Sources */,
+				D3E6C504168DD45300F81CA6 /* YISSTextView.m in Sources */,
+				D3E6C505168DD45300F81CA6 /* YIPopupTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
